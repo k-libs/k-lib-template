@@ -28,6 +28,12 @@ kotlin {
     browser()
     nodejs()
     binaries.executable()
+
+    compilations.all {
+      packageJson {
+        customField("description", project.description!!)
+      }
+    }
   }
 
   val hostOs = System.getProperty("os.name")
