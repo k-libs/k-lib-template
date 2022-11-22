@@ -93,7 +93,7 @@ publishing {
 
       pom {
         name.set("K-Sample")
-        description.set("Example library definition.")
+        description.set(project.description)
         url.set("https://github.com/k-libs/k-lib-template")
 
         licenses {
